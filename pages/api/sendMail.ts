@@ -9,9 +9,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 // import { api, params } from "@serverless/cloud";
 import sendGridMail from "@sendgrid/mail";
 
-sendGridMail.setApiKey(
-  "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"
-);
+sendGridMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async (request: NextApiRequest, response: NextApiResponse) => {
   const { email } = request.body;
