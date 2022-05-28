@@ -1,6 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,8 +10,8 @@ import "swiper/css/navigation";
 
 export function Welcome() {
   return (
-    <section className="relative">
-      <div className="flex flex-col z-[2] items-center absolute text-center text-white top-1/3 bottom-1/3">
+    <section className="flex relative items-center justify-center">
+      <div className="flex flex-col z-[2]  absolute items-center text-center text-white">
         <h1 className="flex text-7xl font-bold">Muito bem-vindo!</h1>
         <p className="w-[40ch] font-semibold text-2xl">
           Temos as melhores soluções em sistemas de geração solar fotovoltaica.
