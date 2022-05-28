@@ -8,10 +8,15 @@ export function Footer() {
         <a
           href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
           target="_blank"
+          rel="noreferrer"
         >
           <WhatsappLogo size={32} />
         </a>
-        <a href="https://www.instagram.com/fotumengenharia/" target="_blank">
+        <a
+          href="https://www.instagram.com/fotumengenharia/"
+          target="_blank"
+          rel="noreferrer"
+        >
           {" "}
           <InstagramLogo size={32} />{" "}
         </a>
@@ -23,6 +28,7 @@ export function Footer() {
             className="text-xl font-medium flex justify-end"
             href="mailto:contato@fotumengenharia.com.br"
             target="_blank"
+            rel="noreferrer"
           >
             <Envelope size={32} />
             contato@fotumengenharia.com.br
@@ -31,6 +37,7 @@ export function Footer() {
             className="text-xl font-medium flex justify-start"
             href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
             target="_blank"
+            rel="noreferrer"
           >
             <Phone size={32} />
             48 98411 0903
