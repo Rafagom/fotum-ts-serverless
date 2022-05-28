@@ -59,17 +59,20 @@ const TextInputLiveFeedback = ({ label, helpText, ...props }: any) => {
 export function ContactForm() {
   async function send(campos: any) {
     let email = campos.email;
-    // console.log(campos.email);
-    axios.post("/api/sendMail", { email });
+    let subject = campos.subject;
+    let cost = campos.cost;
+    let message = campos.message;
+    let username = campos.username;
+    axios.post("/api/sendMail", { username, email, subject, cost, message });
   }
 
   const formik = useFormik({
     initialValues: {
       username: "",
       email: "",
-      subject: " ",
-      cost: " ",
-      message: " ",
+      subject: "",
+      cost: "",
+      message: "",
       // anexo: null,
     },
     onSubmit: async (values) => {
