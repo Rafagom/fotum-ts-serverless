@@ -129,7 +129,7 @@ export function ContactForm() {
         initial="hidden"
         animate={control}
       >
-        <h1 className="text-4xl font-bold text-[#ffaa00]">
+        <h1 className="text-4xl font-bold text-[#ffaa00] text-center w-[13ch] md:w-full">
           Se interessou? Fale conosco!
         </h1>{" "}
       </motion.div>
@@ -190,7 +190,7 @@ export function ContactForm() {
               />
             </div>
 
-            <div className="flex flex-col w-full items-end">
+            <div className="flex flex-col w-full md:items-end">
               <button
                 className="flex rounded bg-[#00324b] text-[#ffaa00] font-semibold text-lg  px-5 py-2  mt-5 justify-center hover:bg-[#174d68] transition-colors disabled:opacity-50 disabled:hover:bg-[#00324b]"
                 type="submit"

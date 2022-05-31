@@ -4,6 +4,7 @@ import { Widget } from "../src/components/Widget/Widget";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import Image from "next/image";
 
 function Services() {
   const left = {
@@ -43,20 +44,13 @@ function Services() {
   return (
     <>
       <Header />
-      <section className="grid grid-cols-2 grid-rows-3">
-        <img
-          className="col-start-1 col-end-2 w-full row-start-1"
-          src="/img1.webp"
-          alt="Modulos"
-        />
-
-        <div className="flex flex-col items-center justify-center gap-10">
-          <h2 className="text-4xl text-center">
+      <section className="grid grid-cols-1 pt-4 lg:grid-cols-2 lg:grid-cols-2grid-rows-3">
+        <div className="flex flex-col items-center justify-center gap-10 py-8 lg:py-0">
+          <h2 className="text-3xl font-semibold md:text-4xl text-center">
             Geração <br /> Solar Fotovoltaica
           </h2>
-          <ul className="flex flex-col text-2xl gap-5 text-center">
-            <li>✔ Projeto</li>
-            <li>✔ Homologação</li>
+          <ul className="flex flex-col gap-5 text-center text-xl md:text-2xl ">
+            <li>✔ Projeto</li> <li>✔ Homologação</li>
             <li>✔ Instalação</li>
             <li>✔ Manutenção</li>
             <li>✔ Ampliações</li>
@@ -64,9 +58,17 @@ function Services() {
           </ul>
         </div>
 
-        <div className="flex flex-col items-center  justify-center gap-10">
-          <h2 className="text-4xl text-center">Instalações Elétricas</h2>
-          <ul className="flex flex-col text-2xl gap-5 text-center">
+        <img
+          className="lg:col-start-1 lg:col-end-2 w-full lg:row-start-1"
+          src="/img1.webp"
+          alt="Modulos"
+        />
+
+        <div className="flex flex-col items-center  justify-center gap-10 py-8 lg:py-0">
+          <h2 className="text-3xl font-semibold md:text-4xl text-center">
+            Instalações Elétricas
+          </h2>
+          <ul className="flex flex-col text-xl md:text-2xl gap-5 text-center">
             <li>✔ Projetos e instalação</li>
             <li>✔ Novas instalações e reformas</li>
             <li>✔ Adequações normativas</li>
@@ -75,24 +77,25 @@ function Services() {
         </div>
 
         <img
-          className="col-start-2 col-end-3 w-full row-start-2"
           src="/img2.webp"
           alt="Modulos"
+          className="flex items-center justify-center lg:row-start-2 lg:col-start-2 lg:col-end-3 "
         />
 
-        <img
-          className="col-start-1 col-end-2 w-full row-start-3"
-          src="/img3.webp"
-          alt="Modulos"
-        />
-
-        <div className="flex flex-col items-center  justify-center gap-10">
-          <h2 className="text-4xl text-center">Eficiência energética</h2>
-          <ul className="flex flex-col text-2xl gap-5 text-center">
+        <div className="flex flex-col items-center  justify-center gap-10 py-8 lg:py-0">
+          <h2 className="text-3xl font-semibold md:text-4xl text-center">
+            Eficiência energética
+          </h2>
+          <ul className="flex flex-col text-xl md:text-2xl gap-5 text-center">
             <li>✔ Análises de potenciais economias</li>
             <li>✔ Medições e identificações de falhas</li>
           </ul>
         </div>
+        <img
+          className=" w-full lg:row-start-3 lg:col-start-1 lg:col-end-2"
+          src="/img3.webp"
+          alt="Modulos"
+        />
       </section>
       <Footer />
       <Widget />

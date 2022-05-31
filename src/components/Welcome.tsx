@@ -10,10 +10,10 @@ import "swiper/css/navigation";
 
 export function Welcome() {
   return (
-    <section className="flex relative items-center justify-center">
+    <section className="flex items-center justify-center">
       <div className="flex flex-col z-[2]  absolute items-center text-center text-white">
         <h1 className="flex text-7xl font-bold">Muito bem-vindo!</h1>
-        <p className="w-[40ch] font-semibold text-2xl">
+        <p className="w-[40ch] font-semibold md:text-2xl">
           Temos as melhores soluções em sistemas de geração solar fotovoltaica.
         </p>
       </div>
@@ -25,7 +25,7 @@ export function Welcome() {
         loop={true}
         modules={[Autoplay, Pagination, Navigation]}
         centeredSlides={true}
-        className="mySwiper"
+        className="mySwiper "
         spaceBetween={0}
         slidesPerView={1}
         // onSlideChange={() => console.log("slide change")}
@@ -39,12 +39,7 @@ export function Welcome() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          {" "}
-          <img
-            className="h-[calc(100vh-4rem)] w-full"
-            src="/img1.webp"
-            alt=""
-          />
+          <img className="" src="/img1.webp" alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <img

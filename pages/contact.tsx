@@ -5,12 +5,14 @@ import { Widget } from "../src/components/Widget/Widget";
 
 function Contact() {
   return (
-    <>
+    <div className="">
       <Header />
       <ContactForm />
+
       <Footer />
+
       <Widget />
-    </>
+    </div>
   );
 }
 export default Contact;

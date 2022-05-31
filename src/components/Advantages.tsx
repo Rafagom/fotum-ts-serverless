@@ -40,7 +40,7 @@ export function Advantages() {
 
   return (
     <section className="flex flex-col justify-center pt-10 gap-10">
-      <ul className="flex flex-col  text-5xl font-bold text-[#ffaa00]  text-center gap-5">
+      <ul className="flex flex-col text-2xl  px-2 font-bold text-[#ffaa00]  text-center gap-5 md:text-5xl">
         <motion.div
           className="box "
           ref={ref}
@@ -60,29 +60,30 @@ export function Advantages() {
           initial="hidden"
           animate={control}
         >
-          <li className="font-semibold text-[#00324b] text-3xl ">
+          <li className="font-semibold text-[#00324b] text-xl md:text-3xl ">
             - Até 95% de economia na conta de energia
           </li>
-          <li className="font-semibold text-[#00324b] text-3xl">
+          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
             - Livre de ajustes tarifários
           </li>
-          <li className="font-semibold text-[#00324b] text-3xl">
+          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
             - Investimento de baixo risco
           </li>
-          <li className="font-semibold text-[#00324b] text-3xl">
+          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
             - Valorização do imóvel e da marca
           </li>
-          <li className="font-semibold text-[#00324b] text-3xl">
+          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
             - Compromisso socioambiental
           </li>
-          <li className="font-semibold text-[#00324b] text-3xl">
+          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
             - Baixa manutenção
           </li>
         </motion.div>
       </ul>
 
-      <img
-        className="w-full h-[75vh]"
+      <Image
+        width={800}
+        height={600}
         src="/img-bottom.jpeg"
         alt="Modulos Fotovoltaicos"
       />

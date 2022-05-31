@@ -5,7 +5,7 @@ export function Widget() {
     <a
       href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
       target="_blank"
-      className="fixed bottom-32 right-0 z-10 "
+      className="hidden md:flex md:fixed md:bottom-32 md:right-0 md:z-10 "
       rel="noreferrer"
     >
       <button>
