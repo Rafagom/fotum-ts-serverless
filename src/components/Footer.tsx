@@ -26,7 +26,7 @@ export function Footer() {
 
         <a
           className="flex items-center gap-2 font-medium"
-          href="tel:7197001211 "
+          href="tel:48984110903"
         >
           <Phone size={32} />
           <p className="hidden lg:flex">(48) 98411-0903</p>
