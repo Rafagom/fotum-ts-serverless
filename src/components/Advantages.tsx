@@ -47,11 +47,16 @@ export function Advantages() {
         initial="hidden"
         animate={control}
       >
-        <h1 className="flex flex-col text-4xl  px-1 py-4 font-bold text-[#ffaa00]  text-center">
-          Aproveite a luz do sol e <br /> gere sua própria energia!
+        <h1 className="   text-4xl  px-1 py-10 font-bold text-[#00324b] ">
+          Aproveite a <br className="sm:hidden" />{" "}
+          <strong className="text-[#ffaa00]"> luz do sol,</strong>
+          <br />
+          gere sua própria
+          <br className="sm:hidden" />
+          <strong className="text-[#ffaa00]"> energia!</strong>
         </h1>
       </motion.div>
-      <div className="flex items-center justify-center bg-[url('/img-bottom.jpeg')] bg-cover bg-no-repeat bg-top w-full p-4">
+      <div className="flex items-center justify-center bg-[url('/img-bottom.jpeg')] bg-cover bg-no-repeat bg-top w-full px-4 py-24">
         <ul className="flex flex-col text-2xl  px-2 py-4 font-bold text-[#ffaa00]  text-center gap-5 bg-[rgb(257,257,257,0.7)] rounded-md sm:px-6 sm:py-6   md:text-5xl md:px-6 md:py-8">
           <motion.div
             className="box flex flex-col text-center gap-5"

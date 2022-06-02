@@ -79,6 +79,7 @@ export function ContactForm() {
   }, [control, inView]);
 
   const [isSubmit, setIsSubmit] = useState(false);
+  const [isSubmited, setIsSubmited] = useState(false);
 
   async function send(campos: any) {
     let email = campos.email;
@@ -98,11 +99,14 @@ export function ContactForm() {
       message: "",
       // anexo: null,
     },
+
     onSubmit: async (values) => {
       setIsSubmit(true);
       await sleep(500);
       send(values);
       setIsSubmit(false);
+      setIsSubmited(true);
+      formik.resetForm();
     },
 
     validationSchema: Yup.object({
@@ -141,7 +145,7 @@ export function ContactForm() {
           initial="hidden"
           animate={control}
         >
-          <Form>
+          <Form className="flex flex-col items-center justify-center">
             <TextInputLiveFeedback
               className="min-w-[304px] w-[60vw] h-10  p-2 rounded border border-solid border-[#00324b] bg-inherit resize-none text-[#00324b] overflow-auto focus:border-[#ffaa00] focus:ring-[#ffaa00] focus:outline-none scrollbar-thumb-zinc-700 scrollbar-thin scrollbar-track-transparent mb-3"
               label="Nome *"
@@ -190,12 +194,19 @@ export function ContactForm() {
               />
             </div>
 
-            <div className="flex flex-col w-full md:items-end">
+            <div className="flex flex-col  sm:w-full md:flex-row md:justify-end md:items-center relative">
+              {isSubmited ? (
+                <p className="flex font-medium  px-5 py-2 mt-5 justify-start text-center w-full md:absolute">
+                  Muito Obrigado! <br /> Em breve retornaremos seu contato!
+                </p>
+              ) : (
+                ""
+              )}
               <button
-                className="flex rounded bg-[#00324b] text-[#ffaa00] font-semibold text-lg  px-5 py-2  mt-5 justify-center hover:bg-[#174d68] transition-colors disabled:opacity-50 disabled:hover:bg-[#00324b]"
+                className="flex  rounded bg-[#00324b] text-[#ffaa00] font-semibold   px-5 py-2  mt-5 justify-center items-center hover:bg-[#174d68] transition-colors disabled:opacity-50 disabled:hover:bg-[#00324b] min-w-[18ch]"
                 type="submit"
               >
-                {isSubmit ? <Loading /> : "Solicitar contato"}
+                {isSubmit ? <Loading /> : <p className="">Solicitar contato</p>}
               </button>
             </div>
           </Form>
