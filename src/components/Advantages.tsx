@@ -47,7 +47,7 @@ export function Advantages() {
         initial="hidden"
         animate={control}
       >
-        <h1 className="   text-4xl  px-1 py-10 font-bold text-[#00324b] ">
+        <h1 className="text-center   text-4xl  px-1 py-10 font-bold text-[#00324b] ">
           Aproveite a <br className="sm:hidden" />{" "}
           <strong className="text-[#ffaa00]"> luz do sol,</strong>
           <br />
