@@ -195,7 +195,7 @@ export function ContactForm() {
                 className="flex rounded bg-[#00324b] text-[#ffaa00] font-semibold text-lg  px-5 py-2  mt-5 justify-center hover:bg-[#174d68] transition-colors disabled:opacity-50 disabled:hover:bg-[#00324b]"
                 type="submit"
               >
-                {isSubmit ? <Loading /> : "Enviar"}
+                {isSubmit ? <Loading /> : "Solicitar contato"}
               </button>
             </div>
           </Form>

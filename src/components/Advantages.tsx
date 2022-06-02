@@ -39,8 +39,8 @@ export function Advantages() {
   }, [control, inView]);
 
   return (
-    <section className="flex flex-col justify-center pt-10 gap-10">
-      <ul className="flex flex-col text-2xl  px-2 font-bold text-[#ffaa00]  text-center gap-5 md:text-5xl">
+    <section className="flex flex-col min-h-[600px] gap-10 bg-[url('/img-bottom.jpeg')] bg-cover bg-no-repeat bg-top items-center justify-center">
+      <ul className="flex flex-col text-2xl  px-2 py-4 font-bold text-[#ffaa00]  text-center gap-5   bg-[rgb(257,257,257,0.7)] max-w-3x1 rounded-md sm:px-8 sm:py-6   md:text-5xl md:px-10 md:py-8">
         <motion.div
           className="box "
           ref={ref}
@@ -81,12 +81,12 @@ export function Advantages() {
         </motion.div>
       </ul>
 
-      <Image
+      {/* <Image
         width={800}
         height={600}
         src="/img-bottom.jpeg"
         alt="Modulos Fotovoltaicos"
-      />
+      /> */}
     </section>
   );
 }

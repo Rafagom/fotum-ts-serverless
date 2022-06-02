@@ -14,9 +14,9 @@ export function Header() {
   return (
     <section>
       <Popover>
-        <div className="relative pt-6 px-4 sm:px-10 lg:px-16 sm:pt-0">
+        <div className="relative pt-4 px-4 sm:px-10 lg:px-16 sm:pt-0">
           <nav
-            className="relative flex items-center justify-between sm:h-14 lg:justify-start"
+            className="relative flex items-center justify-between sm:h-20 lg:justify-start"
             aria-label="Global"
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -26,8 +26,8 @@ export function Header() {
                     <Image
                       src="/logo.png"
                       alt="Logo Fótum Engenharia"
-                      width={100}
-                      height={40}
+                      width={148}
+                      height={60}
                     />
                   </a>
                 </Link>
