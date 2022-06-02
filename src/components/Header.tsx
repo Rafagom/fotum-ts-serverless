@@ -12,11 +12,11 @@ export function Header() {
     { name: "Contato", href: "/contact" },
   ];
   return (
-    <section>
+    <section className="">
       <Popover>
-        <div className="relative pt-4 px-4 sm:px-10 lg:px-16 sm:pt-0">
+        <div className=" w-full py-4 px-4 sm:px-10 lg:px-16 ">
           <nav
-            className="relative flex items-center justify-between sm:h-20 lg:justify-start"
+            className="relative flex items-center justify-between py-4 sm:h-20 lg:justify-start"
             aria-label="Global"
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">

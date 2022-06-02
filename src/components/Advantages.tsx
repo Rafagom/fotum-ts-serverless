@@ -39,47 +39,48 @@ export function Advantages() {
   }, [control, inView]);
 
   return (
-    <section className="flex flex-col min-h-[600px] gap-10 bg-[url('/img-bottom.jpeg')] bg-cover bg-no-repeat bg-top items-center justify-center">
-      <ul className="flex flex-col text-2xl  px-2 py-4 font-bold text-[#ffaa00]  text-center gap-5   bg-[rgb(257,257,257,0.7)] max-w-3x1 rounded-md sm:px-8 sm:py-6   md:text-5xl md:px-10 md:py-8">
-        <motion.div
-          className="box "
-          ref={ref}
-          variants={appear}
-          initial="hidden"
-          animate={control}
-        >
-          <p className="mb-5">
-            Aproveite a luz do sol e <br /> gere sua própria energia!
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="box flex flex-col text-center gap-5"
-          ref={ref}
-          variants={left}
-          initial="hidden"
-          animate={control}
-        >
-          <li className="font-semibold text-[#00324b] text-xl md:text-3xl ">
-            - Até 95% de economia na conta de energia
-          </li>
-          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
-            - Livre de ajustes tarifários
-          </li>
-          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
-            - Investimento de baixo risco
-          </li>
-          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
-            - Valorização do imóvel e da marca
-          </li>
-          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
-            - Compromisso socioambiental
-          </li>
-          <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
-            - Baixa manutenção
-          </li>
-        </motion.div>
-      </ul>
+    <section className="flex flex-col  gap-2  items-center justify-center">
+      <motion.div
+        className="box "
+        ref={ref}
+        variants={appear}
+        initial="hidden"
+        animate={control}
+      >
+        <h1 className="flex flex-col text-4xl  px-1 py-4 font-bold text-[#ffaa00]  text-center">
+          Aproveite a luz do sol e <br /> gere sua própria energia!
+        </h1>
+      </motion.div>
+      <div className="flex items-center justify-center bg-[url('/img-bottom.jpeg')] bg-cover bg-no-repeat bg-top w-full p-4">
+        <ul className="flex flex-col text-2xl  px-2 py-4 font-bold text-[#ffaa00]  text-center gap-5 bg-[rgb(257,257,257,0.7)] rounded-md sm:px-6 sm:py-6   md:text-5xl md:px-6 md:py-8">
+          <motion.div
+            className="box flex flex-col text-center gap-5"
+            ref={ref}
+            variants={left}
+            initial="hidden"
+            animate={control}
+          >
+            <li className="font-semibold text-[#00324b] text-xl md:text-3xl ">
+              - Até 95% de economia na conta de energia
+            </li>
+            <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
+              - Livre de ajustes tarifários
+            </li>
+            <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
+              - Investimento de baixo risco
+            </li>
+            <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
+              - Valorização do imóvel e da marca
+            </li>
+            <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
+              - Compromisso socioambiental
+            </li>
+            <li className="font-semibold text-[#00324b] text-xl md:text-3xl">
+              - Baixa manutenção
+            </li>
+          </motion.div>
+        </ul>
+      </div>
 
       {/* <Image
         width={800}

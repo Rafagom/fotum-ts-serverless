@@ -11,9 +11,9 @@ import "swiper/css/navigation";
 export function Welcome() {
   return (
     <section className="flex items-center justify-center">
-      <div className="flex flex-col z-[2]  absolute items-center text-center text-[#00324b] bg-[rgb(245,245,245,0.7)] py-4  rounded-md sm:px-8 sm:py-6    md:px-10 md:py-8">
+      <div className="flex flex-col z-[2] gap-4 absolute items-center text-center text-[#00324b] bg-[rgb(245,245,245,0.7)] py-4  rounded-md sm:px-8 sm:py-6    md:px-10 md:py-8">
         <h1 className="flex text-5xl font-bold">
-          Muito <br className="sm:hidden" /> bem-vindo!
+          Seja <br className="sm:hidden" /> bem-vindo!
         </h1>
         <p className="w-[40ch] font-semibold md:text-2xl">
           Temos as melhores soluções em sistemas de geração solar fotovoltaica.
