@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  font-family: "Be Vietnam Pro";
   @apply text-[#00324b] min-h-[100vh];
 }
 /* bg-[#f2f2f2] */

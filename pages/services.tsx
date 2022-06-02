@@ -50,11 +50,24 @@ function Services() {
             Geração <br /> Solar Fotovoltaica
           </h2>
           <ul className="flex flex-col gap-5 text-center text-xl md:text-2xl ">
-            <li>✔ Projeto</li> <li>✔ Homologação</li>
-            <li>✔ Instalação</li>
-            <li>✔ Manutenção</li>
-            <li>✔ Ampliações</li>
-            <li>✔ Remanejamento</li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Projeto
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Homologação
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Instalação
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Manutenção
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Ampliações
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Remanejamento
+            </li>
           </ul>
         </div>
 
@@ -69,10 +82,22 @@ function Services() {
             Instalações Elétricas
           </h2>
           <ul className="flex flex-col text-xl md:text-2xl gap-5 text-center">
-            <li>✔ Projetos e instalação</li>
-            <li>✔ Novas instalações e reformas</li>
-            <li>✔ Adequações normativas</li>
-            <li>✔ Inspeções e laudos</li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Projetos e
+              instalação
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Novas
+              instalações e reformas
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Adequações
+              normativas
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Inspeções e
+              laudos
+            </li>
           </ul>
         </div>
 
@@ -87,8 +112,14 @@ function Services() {
             Eficiência energética
           </h2>
           <ul className="flex flex-col text-xl md:text-2xl gap-5 text-center">
-            <li>✔ Análises de potenciais economias</li>
-            <li>✔ Medições e identificações de falhas</li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Análises de
+              potenciais economias
+            </li>
+            <li>
+              <strong className=" font-semibold">&#x2713;</strong> Medições e
+              identificações de falhas
+            </li>
           </ul>
         </div>
         <img
