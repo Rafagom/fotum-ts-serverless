@@ -104,7 +104,7 @@ function Services() {
         <img
           src="/img2.webp"
           alt="Modulos"
-          className="flex items-center justify-center lg:row-start-2 lg:col-start-2 lg:col-end-3 "
+          className="w-full lg:row-start-2 lg:col-start-2 lg:col-end-3 "
         />
 
         <div className="flex flex-col items-center  justify-center gap-10 py-8 lg:py-0">

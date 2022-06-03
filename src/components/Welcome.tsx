@@ -2,6 +2,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import Image from "next/image";
+import img1 from "../../public/img1.png";
+import img2 from "../../public/img2.png";
+import img3 from "../../public/img3.png";
+import homeImg1 from "../../public/home-img1.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -41,20 +45,16 @@ export function Welcome() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <img className="" src="/img1.png" alt="" />
+          <Image src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-[calc(100vh-4rem)] w-full" src="/img2.png" alt="" />
+          <Image src={img2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-[calc(100vh-4rem)] w-full" src="/img3.png" alt="" />
+          <Image src={img3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            className="h-[calc(100vh-4rem)] w-full"
-            src="/home-img1.png"
-            alt=""
-          />
+          <Image src={homeImg1} alt="" />
         </SwiperSlide>
       </Swiper>
     </section>
