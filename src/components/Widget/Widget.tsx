@@ -3,7 +3,7 @@ import { ChatTeardropDots, WhatsappLogo } from "phosphor-react";
 export function Widget() {
   return (
     <a
-      href="https://api.whatsapp.com/message/2KTISK2P7CG6E1?autoload=1&app_absent=0"
+      href="https://wa.me/message/2KTISK2P7CG6E1"
       target="_blank"
       className="  fixed bottom-28 right-0 z-10 "
       rel="noreferrer"
