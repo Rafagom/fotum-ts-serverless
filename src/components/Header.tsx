@@ -8,8 +8,8 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 export function Header() {
   const navigation = [
     { name: "Início", href: "/" },
-    { name: "Serviços", href: "/services" },
-    { name: "Contato", href: "/contact" },
+    { name: "Serviços", href: "/serviços" },
+    { name: "Contato", href: "/contato" },
   ];
   return (
     <section className="">
