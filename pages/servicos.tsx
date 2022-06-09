@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 function Services() {
   const left = {
@@ -43,6 +44,9 @@ function Services() {
 
   return (
     <>
+      <Head>
+        <title>Fótum Engenharia | Serviços</title>
+      </Head>
       <Header />
       <section className="grid grid-cols-1 pt-4 lg:grid-cols-2 lg:grid-cols-2grid-rows-3">
         <div className="flex flex-col items-center justify-center gap-10 py-8 lg:py-0">
